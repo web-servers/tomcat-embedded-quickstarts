@@ -16,8 +16,8 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>1.8</java.version>
 		<springboot-version>1.4.1.RELEASE</springboot-version>
-		<!--<tomcat-version>8.0.36.redhat-17</tomcat-version>-->
-		<tomcat-version>7.0.70.redhat-16</tomcat-version>
+		<tomcat-version>8.0.36.redhat-17</tomcat-version>
+		<!--<tomcat-version>7.0.70.redhat-16</tomcat-version>-->
 	</properties>
 
 	<dependencyManagement>
