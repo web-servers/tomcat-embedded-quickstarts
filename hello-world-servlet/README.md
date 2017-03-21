@@ -1,7 +1,6 @@
 # Introduction
 
-This project demonstrates the use of Apache Tomcat embedded artifacts to run a single servlet.
-
+This project packages Red Hat's JWS distribution of the Apache Tomcat 8.0.36 artifacts with SpringBoot 1.4.1.RELEASE.
 
 # Launch
 
