@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.redhat.jws.quickstart</groupId>
+    <artifactId>ModCluster</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <packaging>jar</packaging>
+
+    <name>mod_cluster</name>
+    <description>Mod_cluster for Embedded Tomcat</description>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <java.version>1.8</java.version>
+        <!--<tomcat-version>7.0.70.redhat-13</tomcat-version>-->
+        <tomcat-version>8.5.20.redhat-3</tomcat-version>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.apache.tomcat.embed</groupId>
+            <artifactId>tomcat-embed-core</artifactId>
+            <version>${tomcat-version}</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.mod_cluster</groupId>
+            <artifactId>mod_cluster-core</artifactId>
+            <version>1.4.0.Alpha1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.mod_cluster</groupId>
+            <artifactId>mod_cluster-container-spi</artifactId>
+            <version>1.4.0.Alpha1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.mod_cluster</groupId>
+            <artifactId>mod_cluster-container-tomcat</artifactId>
+            <version>1.4.0.Alpha1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.mod_cluster</groupId>
+            <artifactId>mod_cluster-container-tomcat85</artifactId>
+            <version>1.4.0.Alpha1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.mod_cluster</groupId>
+            <artifactId>mod_cluster-load-spi</artifactId>
+            <version>1.4.0.Alpha1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.jboss.logging</groupId>
+            <artifactId>jboss-logging</artifactId>
+            <version>3.3.1.Final</version>
+        </dependency>
+    </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.codehaus.mojo</groupId>
+                <artifactId>exec-maven-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>java</goal>
+                        </goals>
+                    </execution>
+                </executions>
+
+                <configuration>
+                    <mainClass>com.redhat.jws.quickstart.ModClusterApplication</mainClass>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
+</project>
