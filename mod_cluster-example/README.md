@@ -1,6 +1,6 @@
 # Introduction
 
-This project utilizes a Red Hat build of the Apache Tomcat 8.5.20 artifacts along with mod_cluster version 1.4.0.Alpha1. It requires that you install and configure mod_cluster (the defaults will do) in httpd as a load balancer for the embedded process.
+This project utilizes Apache Tomcat 8.5.20 with mod_cluster version 1.4.0.Alpha1. It requires that you install and configure mod_cluster (the defaults will do) in httpd as a load balancer for the embedded process.
 
 # Launch
 

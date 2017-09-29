@@ -15,7 +15,8 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <java.version>1.8</java.version>
-        <tomcat-version>8.5.20</tomcat-version>
+        <!-- Note that 8.5.23 doesn't exist yet...I was testing this feature with a dev build -->
+        <tomcat-version>8.5.23</tomcat-version>
     </properties>
 
     <dependencies>

@@ -1,6 +1,6 @@
 # Introduction
 
-This project packages Red Hat's JWS distribution of the Apache Tomcat 8.0.36 artifacts with SpringBoot 1.4.1.RELEASE. It also uses a tomcat-native from the JWS distribution.
+This project utilizes Apache Tomcat 8.0.36 with SpringBoot 1.4.1.RELEASE. It also uses a local tomcat-native build.
 
 # Configure
 

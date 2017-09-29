@@ -1,9 +1,11 @@
 ## tomcat-embedded-quickstarts
-A temporary place to keep quickstarts for JWS tomcat. Each example will have two flavors: Spring Boot and Embedded Tomcat proper, for those that don't want to use Spring Boot.
 
-**TODO:** Use community tomcat by default, add maven profile (would that work?) to allow users to specify JWS instead.
+A temporary place to keep quickstarts for Embedded Tomcat. Each example will have two flavors: Spring Boot and Embedded Tomcat proper, for those that don't want to use Spring Boot.
+
+**TODO:** Add maven profile (would that work?) to allow users to specify JWS instead?
 
 ## Planned Quickstart Topics
+
 * HTTP/2 (Exand APR example)
     * JSSE+Openssl
     * Java9 JSSE
@@ -12,4 +14,5 @@ A temporary place to keep quickstarts for JWS tomcat. Each example will have two
 * Clustering
 
 ## Other Things
-I'd also like to get these examples or some variation of them up on [Katacoda](https://katacoda.com/) in a course.
+
+I'd also like to get these (and more!) examples or some variation of them up on [Katacoda](https://katacoda.com/) in a course.
