@@ -1,6 +1,8 @@
 # Introduction
 
-This project utilizes Red Hat's JWS distribution of the Apache Tomcat 8.0.36 artifacts with tomcat-vault 1.1.3.Final. It also assumes that [PR 29](https://github.com/picketbox/tomcat-vault/pull/29) will be accepted, otherwise it won't work :X
+This project utilizes Tomcat 8.5.23 with tomcat-vault 1.1.3.Final (actually 1.1.4.Final once it's released).
+
+**Note:** As the versions above don't exist, this quickstart doesn't work at the moment. Once the versions above are released, then it'll work (I tested with dev distributions).
 
 # Prerequisites
 

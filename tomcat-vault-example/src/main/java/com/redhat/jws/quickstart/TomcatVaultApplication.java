@@ -20,6 +20,8 @@ import com.redhat.jws.quickstart.servlets.HelloServlet;
 
 import org.apache.catalina.Context;
 import org.apache.catalina.startup.Tomcat;
+import org.apache.tomcat.util.digester.Digester;
+import org.apache.tomcat.util.IntrospectionUtils.PropertySource;
 
 import org.apache.tomcat.vault.util.PropertySourceVault;
 import java.io.File;
@@ -40,20 +42,18 @@ public class TomcatVaultApplication {
         // the other configuration files needed; they are also in src/main/resources/.
         File propFile = new File(TomcatVaultApplication.class.getClassLoader().getResource("vault.properties").getFile());
 
-        // Turn on PROPERTY_SOURCE if you want tomcat to use the vault to decrypt strings in XML files
-        //System.setProperty("org.apache.tomcat.util.digester.PROPERTY_SOURCE", "org.apache.tomcat.vault.util.PropertySourceVault");
-
         // This property will allow you to load vault.properties from somewhere other than conf/
         System.setProperty("org.apache.tomcat.vault.util.VAULT_PROPERTIES", propFile.getPath());
-       
-        // WARNING: If you use the following few lines and start tomcat using PROPERTY_SOURCE, a second vault
-        // will be initialized which fails (due to the a vault design decision), so tomcat won't have a vault
-        // instance to use.
         PropertySourceVault psv = new PropertySourceVault();
+
         // Print a test property from the vault
         System.out.println("Vault entry from block 'my_block' and 'attribute' manager_password: " + 
             psv.getProperty("VAULT::my_block::manager_password::"));
         
+        // If you want tomcat to use the vault to decrypt strings in XML files, pass the PropertySourceVault that you
+        // created above into the Digester
+        Digester.setPropertySource((PropertySource) psv);
+
         // Start the tomcat instance
         tomcat.start();
 
