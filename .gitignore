@@ -1,1 +1,5 @@
 **/*target
+# Ignore the vault keystore, etc so it isn't committed, but is in a common place
+tomcat-vault-example/src/main/resources/vault.keystore
+tomcat-vault-example/src/main/resources/vault.properties
+tomcat-vault-example/src/main/resources/vault/VAULT.dat
