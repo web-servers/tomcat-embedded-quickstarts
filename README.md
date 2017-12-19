@@ -1,6 +1,6 @@
 ## tomcat-embedded-quickstarts
 
-A temporary place to keep quickstarts for Embedded Tomcat. Each example will have two flavors: Spring Boot and Embedded Tomcat proper, for those that don't want to use Spring Boot.
+A place to keep quickstarts for Embedded Tomcat. Each example will have two flavors: Spring Boot and Embedded Tomcat proper, for those that don't want to use Spring Boot.
 
 **TODO:** Add maven profile (would that work?) to allow users to specify JWS instead?
 
