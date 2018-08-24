@@ -36,7 +36,8 @@ public class TomcatVaultApplication {
 
         // Add an instance of the servlet and add the servlet mapping
         Tomcat.addServlet(ctx, "hello", new HelloServlet());
-        ctx.addServletMapping("/hello", "hello");
+        //Replaced deprecated method with 9.0.6 new method
+        ctx.addServletMappingDecoded("/hello", "hello");
 
         // Grab a reference to vault.properties from src/main/resources/ which will point to all of
         // the other configuration files needed; they are also in src/main/resources/.
