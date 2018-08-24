@@ -1,8 +1,6 @@
 # Introduction
 
-This project utilizes Apache Tomcat 8.5.23 with tomcat-vault 1.1.3.Final (actually 1.1.4.Final once it's released).
-
-**Note:** As the versions above don't exist, this quickstart doesn't work at the moment. Once the versions above are released, then it'll work (I tested with dev distributions).
+This project utilizes Apache Tomcat 9.0.6 with tomcat-vault 1.1.7.Final.
 
 # Prerequisites
 
